@@ -121,7 +121,7 @@ def tblmdl(request):
     
 def del_tbl(request,id):
     data1 = modelss.objects.get(id=id)
-    data1.del_tbl()
+    data1.delete()
     return redirect(tblmdl)   
 
 def edit(request,id):
